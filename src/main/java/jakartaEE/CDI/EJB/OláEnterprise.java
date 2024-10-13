@@ -18,6 +18,7 @@ public class OláEnterprise extends GenericServlet {
 	public void service(ServletRequest arg0, ServletResponse arg1) throws ServletException, IOException {
 		String nome = cliente.ola("erick");
 		System.out.println(nome);
+		arg1.getWriter().print("Enterprise");
 
 	}
 

@@ -17,4 +17,15 @@
   	<servlet-name>ServletRustico</servlet-name>
   	<url-pattern>/Rustico</url-pattern>
     </servlet-mapping>
+ 
+    <filter>
+        <filter-name>filtro</filter-name>
+        <filter-class>jakartaEE.filters.filtroRustico</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>filtro</filter-name>
+        <url-pattern>/bacana</url-pattern> 
+    </filter-mapping>
+    
 </web-app>

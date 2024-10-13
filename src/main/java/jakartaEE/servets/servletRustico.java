@@ -36,8 +36,8 @@ public final class servletRustico implements Servlet {
 	public String getServletInfo() {
 
 		try {
-			return config.getServletContext().getServlet("Rustico").getServletInfo();
-		} catch (ServletException e) {
+			return config.getServletContext().getServletContextName();
+		} catch (Exception e) {
 
 			e.printStackTrace();
 		}

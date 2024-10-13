@@ -17,9 +17,9 @@ public class testeServlet extends HttpServlet
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html");
-resp.getWriter().write("Ola do jakarta");
-
-
+		resp.getWriter().write("Ola do jakarta");
+		
+		
 	}
 
 }
